@@ -6,7 +6,7 @@ app.controller('chatCtrl', ['$scope', '$firebase', function($scope, $firebase) {
 	$scope.chatMessage = "";
 	if (name && $scope.chatMessage != null) {
 		
-		var ref = new Firebase("https://chatcakhia.firebaseio.com/");
+		var ref = new Firebase("https://chatcakhia.firebaseio.com");
 		var sync = $firebase(ref);
 		$scope.chatMessages = sync.$asArray();
 		$scope.sendChat = function() {
