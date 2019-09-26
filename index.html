@@ -22,7 +22,7 @@
 
 <body ng-app="app">
 	<div class="container" ng-controller="chatCtrl">
-		<h3 class=" text-center">Hello:<b>{{name}}</b></h3>
+		<h3 class=" text-center">Chào thánh:<b>{{name}}</b></h3>
 		<div class="messaging">
 			<div class="inbox_msg">
 				<div class="inbox_people">
@@ -32,7 +32,7 @@
 						</div>
 						<div class="srch_bar">
 							<div class="stylish-input-group">
-								<input type="text" class="search-bar"  placeholder="Search">
+								<input type="text" class="search-bar"  placeholder="Tìm người để cà khịa...">
 								<span class="input-group-addon">
 									<button type="button"> <i class="fa fa-search" aria-hidden="true"></i> </button>
 								</span> 
@@ -66,7 +66,7 @@
 					<div class="msg_history">
 						<div class="incoming_msg">
 							<div class="incoming_msg_img">
-								<img src="images/logo.jpg" alt="sunil" width="400px"> 
+								<img src="images/logo.jpg" alt="sunil"> 
 							</div>
 							<div class="received_msg" id="chatBox">
 								<div class="received_withd_msg" id="received_withd_msg" ng-repeat="chatMessage in chatMessages | limitTo:-9">
@@ -88,8 +88,5 @@
 			</div>
 		</div>
 	</div>
-	<script>
-		$('.msg_history').scrollTop($('.msg_history')[0].scrollHeight);
-	</script>
 </body>
 </html>
