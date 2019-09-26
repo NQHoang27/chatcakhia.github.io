@@ -1,8 +1,12 @@
 .container{max-width:1170px; margin:auto;}
 body{
   background-color:#f2cdb0;
+   font-size:62.5%; margin:1em; 
 }
-img{ max-width:100%;}
+img{
+  max-width:100%;
+  border-radius: 10px;
+}
 .inbox_people {
   background: #f8f8f8 none repeat scroll 0 0;
   float: left;
@@ -135,3 +139,4 @@ img{ max-width:100%;}
   height: 516px;
   overflow-y: auto;
 }
+
